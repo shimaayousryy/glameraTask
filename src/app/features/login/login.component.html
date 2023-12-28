@@ -1,0 +1,131 @@
+  <div class="row g-0 position-relative">
+    <div class="col-md-4">
+      <div class=" slider">
+        <owl-carousel-o [options]="customOptions">
+          <ng-template carouselSlide>
+            <div class=" position-relative">
+              <img src="../../../assets/images/image.png" width="100" alt="">
+              <div class="layer"></div>
+            </div>
+          </ng-template>  
+          <ng-template carouselSlide>
+            <div class="position-relative">
+              <img src="../../../assets/images/image.png" width="100" alt="">
+              <div class="layer"></div>
+            </div>
+          </ng-template>  
+          <ng-template carouselSlide>
+            <div class="position-relative">
+              <img src="../../../assets/images/image.png" width="100" alt="">
+              <div class="layer"></div>
+            </div>
+          </ng-template>  
+        </owl-carousel-o>
+      </div>
+    </div>
+    <div class="col-md-1 bg-light "></div>
+    <div class="col-md-7 bg-light p-5">
+       <div class="d-flex justify-content-end helpSection">
+        <p>
+          Having troubles? 
+          <span>Get Help</span>
+        </p>
+       </div>
+       <div class="mt-2 formInfo">
+         <h2>Start your business now</h2>
+          <img src="../../../assets/images/line.png" alt="">
+          <p class="w-50">Creating your company is just a few steps away, Enter your email address to continue.</p>
+
+          <form action="" >
+            <div class="row mt-4">
+              <div class="col-md-6 mt-2">
+                <div class="d-flex flex-column px-2">
+                  <label for="fName">First Name</label>
+                  <input id="fName" type="text" class="py-2">
+                </div>
+              </div>
+              <div class="col-md-6 mt-2">
+                <div class="d-flex flex-column px-2">
+                  <label for="lName">Last Name</label>
+                  <input id="lName" type="text" class="py-2">
+                </div>
+              </div>
+
+              <div class="col-md-6 mt-2">
+                <div class="d-flex flex-column px-2">
+                  <label for="email">Email</label>
+                  <input id="email" type="email" class="py-2">
+                </div>
+              </div>
+
+              <div class="col-md-6 mt-2">
+                
+                <div class="d-flex flex-column px-2">
+                  <label for="phoneNumber">Phone Number</label>
+                  <div class="input-group input-group-sm ">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-sm">+966</span>
+                    </div>
+                    <input type="text"  class="form-control py-2" id="phoneNumber">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 mt-2">
+                <div class="d-flex flex-column px-2">
+                  <label for="password">Password</label>
+                  <input id="password" type="password" class="py-2">
+                </div>
+              </div>
+
+            </div>
+          </form>
+          
+          <div class="col-md-12 mt-5">
+            <div class="d-flex justify-content-between align-items-center">
+             <div class="agreePrivacy d-flex align-items-baseline">
+               <input type="checkbox" class="p-5">
+               <p class="w-75 mx-1">
+                 Agree to the <span>Privacy Policy</span> and <span>Terms & Conditions</span>
+               </p>
+             </div>
+             <div class="btn">
+                <button data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <span class="me-5">NEXT</span>
+                  <i class="bi bi-arrow-right"></i>
+
+                </button>
+             </div>
+            </div>
+         </div>
+       </div>
+
+
+    </div>
+
+    <div class="infoBox">
+      <div class="imgIcon">
+        <img src="../../../assets/images/icon.png" alt="">
+      </div>
+      <div>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        <h5 class="mt-1">Salma Mohamed</h5>
+        <span>Founder, Soliter Salon</span>
+      </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header d-flex justify-content-start border-0">
+        <button type="button" class="btn-close bg-transparent p-0 m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <app-otp></app-otp>
+      </div>
+      
+    </div>
+  </div>
+</div>

@@ -1,0 +1,133 @@
+:host ::ng-deep .owl-theme .owl-nav {
+    /* margin-top: -31px; */
+    // background: red;
+    /* text-align: center; */
+    -webkit-tap-highlight-color: transparent;
+    position: absolute;
+    z-index: 99;
+    bottom: 2%;
+    right: 14%;
+}
+.slider{
+    box-shadow: 0px 4px 16px #DDDDE014;
+    .layer{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(100, 93, 168,0.25)
+      }
+      img{
+        height: 100vh;
+      }
+    
+}
+
+
+
+
+.helpSection{
+    font-size: 14px;
+    p{
+        color: rgba(56, 56, 56, 0.5);
+    }
+    span{
+       
+        color: rgba(99, 92, 168, 1);
+        font-weight: 500;
+    }
+}
+
+.formInfo{
+    color: rgba(69, 76, 102, 1);
+    h2{
+        margin-bottom: -12px;
+    }
+    img{
+        margin-inline-start:15%
+    }
+    p{
+        color: rgba(116, 122, 136, 1);
+    }
+    input{
+        border: 1px solid #b4ace5;
+        border-radius: 4px;
+        margin-top: 5px;
+    }
+    label{
+        font-size: 14px;
+    }
+}
+
+.agreePrivacy{
+    span{
+        color: rgba(52, 130, 244, 1);
+    }
+}
+button{
+    background-color: rgb(99, 92, 168);
+    border-radius: 4px;
+    padding: 10px 50px;
+    border: unset;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.input-group-text{
+    border: 1px solid #b4ace5;
+    border-radius: 4px;
+    margin-top: 5px;
+    padding: 7px 19px;
+    background-color: rgba(99, 92, 168, 0.1);
+    color: #635ca8
+    
+
+}
+
+
+.infoBox{
+    z-index: 9;
+    border-radius: 16px 16px 57px 16px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 12%;
+    left: 15%;
+    padding: 15px;
+    width: 368px;
+    .imgIcon{
+        position: absolute;
+        bottom:72%;
+        left: -11%;
+        
+    }
+    p{
+        font-size: 14px;
+    }
+    span{
+        color: rgba(56, 56, 56, 0.50);
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 701px) {
+    .infoBox{
+        z-index: 9;
+        border-radius: 16px 16px 57px 16px;
+        background-color: #ffffff;
+        position: absolute;
+        top: 20%;
+        left: 15%;
+        padding: 15px;
+        width: 368px;
+        height: 140px;
+        .imgIcon{
+            position: absolute;
+            bottom:72%;
+            left: -11%;
+            
+        }
+       
+    }
+  }
