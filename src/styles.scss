@@ -12,3 +12,12 @@
 @font-face {
     font-family: 'Cairo', sans-serif;
   }
+
+  .coloredButton{
+    background-color: rgb(99, 92, 168);
+    border-radius: 4px;
+    padding: 10px 50px;
+    border: unset;
+    color: #ffffff;
+    font-size: 14px;
+}

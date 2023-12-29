@@ -1,0 +1,169 @@
+  <div class="row g-0">
+    <div class="col-md-4">
+      <div class=" slider">
+        <div class=" position-relative w-100">
+          <img src="../../../assets/images/image.png" class="w-100" alt="">
+          <div class="layer d-flex flex-column align-items-left py-5 px-5">
+            <img src="../../../assets/images/logo.png" class="logoImg" alt="">
+            <div class="text-white  px-2 mt-4">
+              <h2 class="my-3">Few clicks away from creating your business</h2>
+              <p class="me-5">Start your business in minutes. save time and money</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1 bg-light "></div>
+    <div class="col-md-7 bg-light p-5">
+      <div class="d-flex justify-content-end helpSection">
+        <p>
+          Having troubles? 
+          <span>Get Help</span>
+        </p>
+       </div>
+       <div class="d-flex justify-content-start my-2">
+        <button (click)="goBack()" class="bg-transparent border-0">
+          <i class="bi bi-arrow-left"></i>
+        </button>
+       </div>
+
+       <div class="mt-2 formInfo">
+         <h2>Choose the type of business</h2>
+          <p class="w-50 my-2">To get start tell us what type of Business you are going to incorporate and name</p>
+
+          <form action="" >
+            <div class="row mt-4 pe-5">
+              <div class="col-md-12 mt-2 ">
+                <div class="d-flex flex-column px-2">
+                  <label for="fName">Business Type </label>
+                  <input id="fName" type="text" class="py-2">
+                </div>
+              </div>
+              <div class="col-md-12 mt-2">
+                <div class="d-flex flex-column px-2">
+                  <label for="lName">Business Type</label>
+                  <div class="d-flex mt-1">
+                    <div class="me-4">
+                      <button (click)="isSalonSelected = !isSalonSelected" [ngClass]="isSalonSelected ? 'selectedBox' :'unSelectedBox'">
+                        <span class="me-2">
+                          <i class="bi bi-scissors"></i>
+                        </span>
+                        <label>
+                          Salon
+                        </label>
+                      </button>
+                    </div>
+
+                    <div  class="me-4">
+                      <button (click)="isGymSelected = !isGymSelected" [ngClass]="isGymSelected ? 'selectedBox' :'unSelectedBox'">
+                        <span class="me-2">
+                          <i class="bi bi-scissors"></i>
+                        </span>
+                        <label>
+                          Gym
+                        </label>
+                      </button>
+                    </div>
+
+                    <div  class="me-4">
+                      <button (click)="isSpaSelected = !isSpaSelected" [ngClass]="isSpaSelected ? 'selectedBox' :'unSelectedBox'">
+                        <span class="me-2">
+                          <i class="bi bi-scissors"></i>
+                        </span>
+                        <label>
+                          Spa
+                        </label>
+                      </button>
+                    </div>
+
+                    <div  class="">
+                      <button (click)="isClinicSelected = !isClinicSelected" [ngClass]="isClinicSelected ? 'selectedBox' :'unSelectedBox'">
+                        <span class="me-2">
+                          <i class="bi bi-scissors"></i>
+                        </span>
+                        <label>
+                          Clinic
+                        </label>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 mt-2">
+                <div class="d-flex flex-column px-2">
+                  <label for="email">Governorate</label>
+                  <select class="form-select py-2" aria-label="Default select example">
+                    <option selected>Cairo</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6 mt-2">
+                <div class="d-flex flex-column px-2">
+                  <label for="email">District</label>
+                  <select class="form-select py-2" aria-label="Default select example">
+                    <option selected>District</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-md-6 mt-2">
+                <div class="d-flex flex-column px-2">
+                  <label for="email">How did you know us?</label>
+                  <select class="form-select py-2" aria-label="Default select example">
+                    <option selected>Select one</option>
+                    <option value="1">
+                      FaceBook
+                    </option>
+                    <option value="2">Twitter</option>
+                    <option value="3">FRIEND</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6 mt-2">
+                <div class="d-flex flex-column px-2">
+                  <label for="system">Are you currently using system ?
+                    <i class="bi bi-question-circle"></i>
+                  </label>
+                  <div class="mt-2  d-flex">
+                     <div>
+                      <input type="radio" name="boolean" id="yes">
+                      <label class="mx-1" id="yes" name="boolean" for="">Yes</label>
+                     </div>
+                     <div class="mx-3">
+                      <input type="radio" name="boolean" id="no">
+                      <label class="mx-1" for="">No</label>
+                     </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </form>
+          
+          <div class="col-md-12 mt-5">
+            <div class="d-flex justify-content-end align-items-center">
+         
+             <div class="btn">
+                <button class="coloredButton" (click)="onSuccess()">
+                  <span class="me-5">CREATE ACCOUNT</span>
+                  <i class="bi bi-arrow-right"></i>
+
+                </button>
+             </div>
+            </div>
+         </div>
+       </div>
+
+
+    </div>
+
+  
+</div>
+

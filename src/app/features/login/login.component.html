@@ -90,7 +90,7 @@
                </p>
              </div>
              <div class="btn">
-                <button data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button data-bs-toggle="modal" class="coloredButton" data-bs-target="#exampleModal">
                   <span class="me-5">NEXT</span>
                   <i class="bi bi-arrow-right"></i>
 
@@ -123,7 +123,9 @@
         <button type="button" class="btn-close bg-transparent p-0 m-0" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body text-center">
-        <app-otp></app-otp>
+        <app-otp ></app-otp>
+        <button class="coloredButton" (click)="submitOtp()"  data-bs-dismiss="modal"  >VERIFY</button>
+
       </div>
       
     </div>

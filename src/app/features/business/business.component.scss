@@ -1,0 +1,102 @@
+
+.slider{
+    box-shadow: 0px 4px 16px #DDDDE014;
+    .layer{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(100, 93, 168,0.25);
+        .logoImg{
+            width: 50%;
+            height: 190px;
+    
+          }
+          p{
+            color: rgba(255, 255, 255 ,0.75);
+            margin-top: 30px;
+          }
+      }
+      img{
+        height: 100vh;
+      }
+   
+      
+    
+}
+
+
+
+
+.helpSection{
+    font-size: 14px;
+    p{
+        color: rgba(56, 56, 56, 0.5);
+    }
+    span{
+       
+        color: rgba(99, 92, 168, 1);
+        font-weight: 500;
+    }
+}
+
+.formInfo{
+    color: rgba(69, 76, 102, 1);
+   
+    p{
+        color: rgba(116, 122, 136, 1);
+    }
+    input{
+        border: 1px solid #b4ace5;
+        border-radius: 4px;
+        margin-top: 5px;
+    }
+    label{
+        font-size: 14px;
+    }
+}
+
+
+.input-group-text{
+    border: 1px solid #b4ace5;
+    border-radius: 4px;
+    margin-top: 5px;
+    padding: 7px 19px;
+    background-color: rgba(99, 92, 168, 0.1);
+    color: #635ca8
+    
+
+}
+
+
+.selectedBox{
+  padding:10px 43px ;
+  background: #6959CB08 ;
+  border: 1px solid #615EA3;
+  border-radius: 4px;
+  span{
+       background-color:  #6AC7BB;
+        color: #FFFFFF;
+        padding: 2px 10px;
+        border-radius: 4px;
+  }
+}
+
+.unSelectedBox{
+    background: #FFFFFF ;
+    border: 1px solid #D0D5DE;
+    border-radius: 4px;
+    padding:10px 43px ;
+    span{
+        border: 1px solid #6AC7BB;
+        color: #615EA3;
+        padding: 2px 10px;
+        border-radius: 4px;
+
+
+    }
+
+}

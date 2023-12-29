@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, Input, ViewChild } from '@angular/core';
+import { Component, OnInit, OnDestroy, Input, ViewChild, Output, EventEmitter } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Router } from '@angular/router';
 import { OwlOptions } from 'ngx-owl-carousel-o';
@@ -11,7 +11,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 
 export class OtpComponent implements OnInit {
   visible:boolean =false
-  
+  @Output() onSubmitOtpEvent = new EventEmitter<any>()
     constructor(
          private router: Router
         ) {
@@ -24,6 +24,10 @@ export class OtpComponent implements OnInit {
 
     onOtpChange(event){
 
+    }
+    submitOtp(){
+      this.onSubmitOtpEvent.emit()
+      // this.router.navigate(['/business'])
     }
 
 }

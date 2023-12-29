@@ -10,7 +10,6 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 
 export class LoginComponent implements OnInit {
-  visible:boolean =false
     customOptions: OwlOptions = {
         loop: true,
         mouseDrag: false,
@@ -49,8 +48,8 @@ export class LoginComponent implements OnInit {
       
     }
 
-    viewOtp(){
-      this.visible =true
+    submitOtp(){
+      this.router.navigate(['/business'])
     }
 
 }

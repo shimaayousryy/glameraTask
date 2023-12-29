@@ -1,0 +1,20 @@
+h3{
+    color: #454C66;
+    
+}
+p{
+    color: #747A88;
+  span{
+    color: #6AC7BB;
+
+  }
+}
+
+:host ::ng-deep .otp-input {
+    margin-right: 16px;
+    padding: 10px 36px;
+}
+
+.ng-otp-input-wrapper[_ngcontent-ng-c3470639301] .otp-input[_ngcontent-ng-c3470639301]:not(:last-child) {
+    margin-right: unset; 
+}
