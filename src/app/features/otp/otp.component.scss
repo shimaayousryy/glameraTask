@@ -12,7 +12,8 @@ p{
 
 :host ::ng-deep .otp-input {
     margin-right: 16px;
-    padding: 10px 36px;
+    // padding: 10px 36px;
+     width: 75px !important;
 }
 
 .ng-otp-input-wrapper[_ngcontent-ng-c3470639301] .otp-input[_ngcontent-ng-c3470639301]:not(:last-child) {
